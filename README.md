@@ -93,4 +93,7 @@ go mod tidy
 ### Run the Application
 ```bash
 go run main.go
+
+### Access the App
+Visit `http://localhost:8080` in your browser or API client.
 ````

@@ -55,7 +55,7 @@
   "tillDate": "2024-12-25T00:00:00Z",
   "numPersons": 4
 }
-
+```
 ## View Bookings by User
 **GET** `http://localhost:8080/api/v1/booking/:id`
 
@@ -76,5 +76,6 @@ git clone https://github.com/your-repo/hotel-hop.git
 cd hotel-hop
 
 ### Install Dependencies
-```bash
+bash
 go mod tidy
+```

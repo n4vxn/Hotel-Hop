@@ -30,25 +30,32 @@
     "password": "password123"
   }
   ```
+
 ### Get All Hotels
+
 **GET** `http://localhost:8080/api/v1/hotel`
 
 ### Get Hotel by ID
+
 **GET** `http://localhost:8080/api/v1/hotel/:id`
 
 ### Get Rooms of a Hotel
+
 **GET** `http://localhost:8080/api/v1/hotel/:id/rooms`
 
 ## Room Management
 
 ### Get All Available Rooms
+
 **GET** `http://localhost:8080/api/v1/room`
 
 ### Book a Room
+
 **POST** `http://localhost:8080/api/v1/room/:id/book`  
 **Requires user authentication.**
 
 ### Book a Room Request Body
+
 ```json
 {
   "fromDate": "2024-12-12T00:00:00Z",
@@ -56,26 +63,34 @@
   "numPersons": 4
 }
 ```
+
 ## View Bookings by User
+
 **GET** `http://localhost:8080/api/v1/booking/:id`
 
 ### Cancel Booking
+
 **GET** `http://localhost:8080/api/v1/booking/:id/cancel`
 
 ## Admin Panel
 
 ### Get All Bookings
-**GET** `http://localhost:8080/api/v1/admin/booking`
 
+**GET** `http://localhost:8080/api/v1/admin/booking`
 
 ## Setup
 
 ### Clone the Repository
-```bash
+
+````bash
 git clone https://github.com/your-repo/hotel-hop.git
 cd hotel-hop
 
 ### Install Dependencies
 bash
 go mod tidy
-```
+
+### Run the Application
+```bash
+go run main.go
+````
